@@ -19,7 +19,7 @@ options.add_argument("--window-size=1920,1080")  # Set window size
 driver = webdriver.Chrome(service=service, options=options)
 
 # Open Google Search URL
-search_url = "https://www.google.com/search?q=filetype:pdf+sample"
+search_url = "https://www.google.com/search?q=filetype:svg+sample"
 
 driver.get(search_url)
 
@@ -53,7 +53,7 @@ while True:
 	word = random.choice(words)
 
 	# Now do the shit...
-	search_url = "https://www.google.com/search?q=filetype:pdf+"+word+"&start="+str(random.randrange(5)*10) # Do the stuff...
+	search_url = "https://www.google.com/search?q=filetype:svg+"+word+"&start="+str(random.randrange(5)*10) # Do the stuff...
 	print("word: "+str(word))
 	driver.get(search_url)
 
